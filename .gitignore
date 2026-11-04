@@ -1,1 +1,9 @@
 _site/
+.gradle/
+build/
+app/build/
+local.properties
+.kotlin/
+android-studio/
+.idea/
+android-studio.desktop

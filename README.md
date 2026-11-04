@@ -1,5 +1,37 @@
 # Seldon Fleet
 
+Implementação Android em Kotlin/Compose do desafio. O app lê `app/src/main/assets/frota.json` offline, lista e filtra a frota, abre detalhes justificando o status e persiste favoritos em `SharedPreferences`.
+
+## Executar
+
+Abra a pasta no Android Studio e execute o módulo `app`, ou rode `./gradlew test` para validar o domínio na JVM. O APK debug pode ser gerado com `./gradlew assembleDebug`.
+
+O domínio está em `app/src/main/java/com/seldon/fleet/domain`, sem dependência Android. A decisão de tratamento dos dados defeituosos está em [PROTOCOLO.md](PROTOCOLO.md).
+
+## Prints do app
+
+Capturas reais feitas no emulador `Seldon_AOSP_API35`:
+
+### Lista da frota
+
+![Lista da frota](docs/screenshots/app-list.png)
+
+### Filtro por dispositivos críticos
+
+![Filtro crítico](docs/screenshots/app-filter-critico.png)
+
+### Detalhe do dispositivo
+
+![Detalhe do dispositivo](docs/screenshots/app-detail.png)
+
+## Requisitos consolidados
+
+Todos os requisitos normativos do desafio estão em [REQUISITOS.md](REQUISITOS.md).
+
+## O que faria em seguida
+
+Eu adicionaria testes de UI para preservar o filtro na navegação e substituiria o armazenamento simples de favoritos por DataStore, caso o produto precisasse de migrações ou múltiplos perfis.
+
 Desafio técnico de engenharia Android — **Residência Tecnológica, Módulo 1 (Núcleo Comum)**.
 
 > Construir um app Android em Kotlin/Compose de duas telas que lê um `frota.json` local,
