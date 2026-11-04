@@ -8,6 +8,10 @@ Abra a pasta no Android Studio e execute o módulo `app`, ou rode `./gradlew tes
 
 O domínio está em `app/src/main/java/com/seldon/fleet/domain`, sem dependência Android. A decisão de tratamento dos dados defeituosos está em [PROTOCOLO.md](PROTOCOLO.md).
 
+O uso de assistentes de IA foi restrito ao apoio de planejamento, revisão da especificação,
+implementação e validação; as decisões finais, o código e os testes foram conferidos no projeto
+e no emulador.
+
 ## Prints do app
 
 Capturas reais feitas no emulador `Seldon_AOSP_API35`:
